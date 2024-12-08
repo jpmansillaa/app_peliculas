@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 class="text-center my-5">Mostrando las Movies</h1>
+    <% @movie.each do |p| %>
+    <h2><%= p.name %></h2>
+    <p><%= p.synopsis %></p>
+    <p><%= p.director %></p>
+    <% end%>
+    <%= link_to "Agregar nueva Movie", movies_new_path %>
+</div>
